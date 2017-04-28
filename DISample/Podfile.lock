@@ -1,0 +1,25 @@
+PODS:
+  - NanoFrame (0.0.3)
+  - NSURL+QueryDictionary (1.2.0)
+  - Typhoon (4.0.2):
+    - Typhoon/DeallocNotifier (= 4.0.2)
+    - Typhoon/IntrospectionUtils (= 4.0.2)
+    - Typhoon/no-arc (= 4.0.2)
+  - Typhoon/DeallocNotifier (4.0.2)
+  - Typhoon/IntrospectionUtils (4.0.2)
+  - Typhoon/no-arc (4.0.2):
+    - Typhoon/IntrospectionUtils
+
+DEPENDENCIES:
+  - NanoFrame
+  - NSURL+QueryDictionary
+  - Typhoon
+
+SPEC CHECKSUMS:
+  NanoFrame: a1dabbac9994eeea5e6289ec8201d5752a01cd21
+  NSURL+QueryDictionary: bae616404e2adf6409d3d5c02a093cbf44c8a236
+  Typhoon: 05db9d33d798b90c202bf3f754275c03efe93297
+
+PODFILE CHECKSUM: cebb04480ebb2f69b13d82c3c4d25ba74950a814
+
+COCOAPODS: 1.2.1.beta.1
