@@ -20,6 +20,9 @@ public class RootViewController : UIViewController,
     
     var cityListFromApi : NSArray?
     
+     var cityInfo: CityInfo?
+
+    
     //Interface Builder injected properties-----------------------------
     @IBOutlet var citiesListTableView : UITableView!
     

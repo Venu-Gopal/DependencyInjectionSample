@@ -14,7 +14,9 @@ import Foundation
 /*
 * City DAO (persistence) protocol.
 * (Currently, injected protocols require the @objc annotation).
+ //If you define a protocol property in your class (e.g. var cityDao: CityDao?), that protocol must also have the @objc modifier). Otherwise injection will not work.
 */
+
 @objc public protocol CityInfo {
     
     /**

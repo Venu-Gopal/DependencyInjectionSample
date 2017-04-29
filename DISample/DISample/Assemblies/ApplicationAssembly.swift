@@ -42,7 +42,7 @@ public class ApplicationAssembly:TyphoonAssembly
             
             // Injecting with property:
             
-            definition?.injectProperty(#selector(setter: RootViewController.cityListFromApi), with: self.coreAssembly.cityListFromApi())
+            definition?.injectProperty(#selector(setter: RootViewController.cityInfo), with: self.coreAssembly.cityInfo())
             
             definition!.scope = TyphoonScope.singleton
         }
