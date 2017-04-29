@@ -15,7 +15,7 @@ import Foundation
 * City DAO (persistence) protocol.
 * (Currently, injected protocols require the @objc annotation).
 */
-@objc public protocol CityDao {
+@objc public protocol CityInfo {
     
     /**
     * Returns an array containing the names of all cities to report weather for.

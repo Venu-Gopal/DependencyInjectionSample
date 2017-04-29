@@ -10,6 +10,7 @@ import Typhoon
 
 public class CoreAssembly: TyphoonAssembly
 {
+    
     public dynamic func weatherClient() -> Any
     {
         return TyphoonDefinition.withClass(WeatherClientBasicImpl.self)
@@ -27,7 +28,7 @@ public class CoreAssembly: TyphoonAssembly
         return TyphoonDefinition.withClass(WeatherReportDaoFileSystemImpl.self)
     }
     
-    public dynamic func cityDao() -> Any
+    public dynamic func cityInfo() -> Any
     {
         return TyphoonDefinition.withClass(CityDaoUserDefaultsImpl.self) {
             (definition) in
@@ -41,7 +42,7 @@ public class CoreAssembly: TyphoonAssembly
         }
     }
     
-    public dynamic func getCityListFromApi() -> NSArray
+    public dynamic func cityListFromApi() -> Any
     {
          return ["Noida", "Delhi", "Punjab"]
     }

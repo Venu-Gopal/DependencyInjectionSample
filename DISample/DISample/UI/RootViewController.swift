@@ -18,7 +18,7 @@ public class RootViewController : UIViewController,
     private var assembly : ApplicationAssembly!
     private var arrCityList: NSArray?
     
-    public dynamic var cityListFromApi : NSArray?
+    var cityListFromApi : NSArray?
     
     //Interface Builder injected properties-----------------------------
     @IBOutlet var citiesListTableView : UITableView!

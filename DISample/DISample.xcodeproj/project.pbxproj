@@ -15,7 +15,7 @@
 		A25CC8D81EB33D9100504370 /* NSDictionary+WeatherRerport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D71EB33D9100504370 /* NSDictionary+WeatherRerport.swift */; };
 		A25CC8DA1EB33E3600504370 /* NSError+PocketForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D91EB33E3600504370 /* NSError+PocketForecast.swift */; };
 		A25CC8E51EB3623D00504370 /* CityDaoUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8E41EB3623D00504370 /* CityDaoUserDefaultsImpl.swift */; };
-		A25CC8E71EB362BF00504370 /* CityDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8E61EB362BF00504370 /* CityDao.swift */; };
+		A25CC8E71EB362BF00504370 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8E61EB362BF00504370 /* CityInfo.swift */; };
 		A25CC8EB1EB364ED00504370 /* ThemeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8EA1EB364ED00504370 /* ThemeFactory.swift */; };
 		A25CC8ED1EB3651F00504370 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8EC1EB3651F00504370 /* Theme.swift */; };
 		A28AB0B41EB268C6003D30A7 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AB0B31EB268C6003D30A7 /* ApplicationAssembly.swift */; };
@@ -54,7 +54,7 @@
 		A25CC8D71EB33D9100504370 /* NSDictionary+WeatherRerport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+WeatherRerport.swift"; sourceTree = "<group>"; };
 		A25CC8D91EB33E3600504370 /* NSError+PocketForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+PocketForecast.swift"; sourceTree = "<group>"; };
 		A25CC8E41EB3623D00504370 /* CityDaoUserDefaultsImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDaoUserDefaultsImpl.swift; sourceTree = "<group>"; };
-		A25CC8E61EB362BF00504370 /* CityDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDao.swift; sourceTree = "<group>"; };
+		A25CC8E61EB362BF00504370 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
 		A25CC8EA1EB364ED00504370 /* ThemeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFactory.swift; sourceTree = "<group>"; };
 		A25CC8EC1EB3651F00504370 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A28AB0AF1EB266CA003D30A7 /* DISample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DISample-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			children = (
 				A25CC8EC1EB3651F00504370 /* Theme.swift */,
 				A25CC8EA1EB364ED00504370 /* ThemeFactory.swift */,
-				A25CC8E61EB362BF00504370 /* CityDao.swift */,
+				A25CC8E61EB362BF00504370 /* CityInfo.swift */,
 				A25CC8E41EB3623D00504370 /* CityDaoUserDefaultsImpl.swift */,
 				A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */,
 				A28AB0CD1EB27768003D30A7 /* WeatherReportDao.swift */,
@@ -430,7 +430,7 @@
 				A28AB0C71EB274B1003D30A7 /* Temperature.swift in Sources */,
 				A28AB0B41EB268C6003D30A7 /* ApplicationAssembly.swift in Sources */,
 				A25CC8DA1EB33E3600504370 /* NSError+PocketForecast.swift in Sources */,
-				A25CC8E71EB362BF00504370 /* CityDao.swift in Sources */,
+				A25CC8E71EB362BF00504370 /* CityInfo.swift in Sources */,
 				A25CC8D81EB33D9100504370 /* NSDictionary+WeatherRerport.swift in Sources */,
 				A28AB0C51EB27394003D30A7 /* ForecastConditions.swift in Sources */,
 				A28AB0BB1EB26EE7003D30A7 /* RootViewController.swift in Sources */,

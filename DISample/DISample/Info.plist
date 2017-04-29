@@ -32,8 +32,8 @@
 	</array>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
-		<string>ApplicationAssembly</string>
 		<string>CoreAssembly</string>
+		<string>ApplicationAssembly</string>
 	</array>
 </dict>
 </plist>

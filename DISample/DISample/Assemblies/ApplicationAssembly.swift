@@ -10,7 +10,7 @@ import Typhoon
 
 public class ApplicationAssembly:TyphoonAssembly
 {
-    public var coreAssemblyObject: CoreAssembly!
+    dynamic var coreAssembly: CoreAssembly!
     
     /*
      * This is the definition for our AppDelegate. Typhoon will inject the specified properties
@@ -41,14 +41,13 @@ public class ApplicationAssembly:TyphoonAssembly
                         }
             
             // Injecting with property:
-            //definition?.injectProperty(Selector(("cityListFromApi")), with: self.coreAssemblyObject.getCityListFromApi())
             
-            definition?.injectProperty(Selector(("cityListFromApi")),
-                                       with: self.coreAssemblyObject.getCityListFromApi())
+            definition?.injectProperty(#selector(setter: RootViewController.cityListFromApi), with: self.coreAssembly.cityListFromApi())
             
             definition!.scope = TyphoonScope.singleton
         }
     }
+
 
     public dynamic func cityListArr() -> NSArray
     {
