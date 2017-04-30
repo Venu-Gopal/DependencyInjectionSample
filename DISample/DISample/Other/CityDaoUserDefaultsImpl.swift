@@ -14,11 +14,11 @@ public class CityDaoUserDefaultsImpl : NSObject, CityInfo
     let currentCityKey = "pfWeather.currentCityKey"
     
     let defaultCities = [
-        "Manila",
-        "Madrid",
-        "San Francisco",
-        "Phnom Penh",
-        "Omsk"
+        "Noida",
+        "Delhi",
+        "Punjab",
+        "Haryana",
+        "Dehradoon"
     ]
     
     

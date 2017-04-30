@@ -20,7 +20,15 @@ public class RootViewController : UIViewController,
     
     var cityListFromApi : NSArray?
     
-     var cityInfo: CityInfo?
+     //public private(set) var cityInfo: CityInfo!
+    
+    var cityInfo:CityInfo!
+   {
+        didSet
+        {
+             cityListFromApi = self.cityInfo.listAllCities() as NSArray
+        }
+    }
 
     
     //Interface Builder injected properties-----------------------------
@@ -48,8 +56,8 @@ public class RootViewController : UIViewController,
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        if (self.cityListFromApi != nil) {
-            return self.cityListFromApi!.count
+        if (self.cityInfo != nil) {
+            return self.cityInfo.listAllCities().count
         }
         return 0
     }
@@ -68,7 +76,8 @@ public class RootViewController : UIViewController,
         cell!.selectionStyle = UITableViewCellSelectionStyle.gray
         cell!.textLabel?.font = UIFont.systemFont(ofSize: 16)
         cell!.textLabel?.textColor = UIColor.darkGray
-        cell!.textLabel?.text = cityListFromApi!.object(at: indexPath.row) as? String
+        cell!.textLabel?.text = cityListFromApi?.object(at: indexPath.row) as? String
+        
         cell!.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         
         return cell!
@@ -76,9 +85,9 @@ public class RootViewController : UIViewController,
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let cityName : String = cityListFromApi!.object(at: indexPath.row) as! String
+        //let cityName : String = cityListFromApi!.object(at: indexPath.row) as! String
         
-        NSLog(cityName)
+        //NSLog(cityName)
        // cityDao.saveCurrentlySelectedCity(cityName)
     }
     

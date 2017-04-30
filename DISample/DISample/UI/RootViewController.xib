@@ -20,8 +20,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-5L-b7f">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hca-cV-QQi"/>
+                        <outlet property="delegate" destination="-1" id="Qsz-H6-NP3"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -29,9 +33,9 @@
                 <constraint firstAttribute="trailing" secondItem="oFY-5L-b7f" secondAttribute="trailing" id="GQe-6C-3eq"/>
                 <constraint firstItem="oFY-5L-b7f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KEF-hW-m4s"/>
                 <constraint firstAttribute="bottom" secondItem="oFY-5L-b7f" secondAttribute="bottom" id="M0B-F8-tbq"/>
-                <constraint firstItem="oFY-5L-b7f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O7V-ol-NAm"/>
+                <constraint firstItem="oFY-5L-b7f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="O7V-ol-NAm"/>
             </constraints>
-            <point key="canvasLocation" x="-615.5" y="-165.5"/>
+            <point key="canvasLocation" x="-1034" y="-301"/>
         </view>
     </objects>
 </document>

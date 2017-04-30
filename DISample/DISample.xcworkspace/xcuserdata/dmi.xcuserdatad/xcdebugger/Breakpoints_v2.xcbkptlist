@@ -42,22 +42,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/Assemblies/ApplicationAssembly.swift"
-            timestampString = "515187842.070298"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "rootViewController()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DISample/Assemblies/ApplicationAssembly.swift"
             timestampString = "515188867.246924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -122,7 +106,7 @@
                   moduleName = "DISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/Assemblies/ApplicationAssembly.swift"
-                  timestampString = "515194208.627751"
+                  timestampString = "515272738.782507"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "31"
@@ -137,7 +121,7 @@
                   moduleName = "DISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/Assemblies/ApplicationAssembly.swift"
-                  timestampString = "515194208.629675"
+                  timestampString = "515272738.784584"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -176,6 +160,132 @@
             startingLineNumber = "195"
             endingLineNumber = "195"
             landmarkName = "-componentForKey:args:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DISample/UI/RootViewController.swift"
+            timestampString = "515272877.480715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DISample/UI/RootViewController.swift"
+            timestampString = "515272122.842749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "RootViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DISample.RootViewController.citiesListTableView.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "DISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/RootViewController.swift"
+                  timestampString = "515272738.8"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DISample.RootViewController.citiesListTableView.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "DISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/RootViewController.swift"
+                  timestampString = "515272738.802057"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DISample.RootViewController.init (withAssembly : DISample.ApplicationAssembly, arrCityData : __ObjC.NSArray) -&gt; DISample.RootViewController"
+                  moduleName = "DISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/RootViewController.swift"
+                  timestampString = "515272738.803994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DISample.RootViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;DISample.RootViewController&gt;"
+                  moduleName = "DISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/RootViewController.swift"
+                  timestampString = "515272738.806477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DISample/UI/RootViewController.swift"
+            timestampString = "515272186.590565"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "numberOfSectionsInTableView(tableView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DISample/UI/RootViewController.swift"
+            timestampString = "515272187.732465"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
