@@ -30,6 +30,13 @@ public class RootViewController : UIViewController,
     }
 
     var weatherReportVC: WeatherReportViewController!
+    {
+        didSet
+        {
+           
+        }
+    }
+
     
     
     //Interface Builder injected properties-----------------------------
@@ -44,6 +51,9 @@ public class RootViewController : UIViewController,
         super.init(nibName : nil, bundle : nil)
         self.assembly = withAssembly
         self.arrCityList = arrCityData
+        self.weatherReportVC = weatherReportVC
+        
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -89,6 +99,8 @@ public class RootViewController : UIViewController,
     {
         let cityName : String = cityListFromApi!.object(at: indexPath.row) as! String
         cityInfo.saveCurrentlySelectedCity(cityName: cityName)
+        
+        self.navigationController?.pushViewController(weatherReportVC, animated: true)
     }
     
 }

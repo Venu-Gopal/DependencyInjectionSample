@@ -10,6 +10,7 @@
 		6D1EEE4C5465F2477BB7D458 /* Pods_DISample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB805424041F069940451FFC /* Pods_DISample.framework */; };
 		932C5846120C98B6BFB1BE4C /* Pods_DISampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979F18CC622BB78D5E0A6686 /* Pods_DISampleTests.framework */; };
 		A20216851EB7021F0070EC6F /* WeatherReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */; };
+		A20216871EB7237E0070EC6F /* WeatherReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20216861EB7237E0070EC6F /* WeatherReportViewController.xib */; };
 		A25CC8D21EB32BEC00504370 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D11EB32BEC00504370 /* CoreAssembly.swift */; };
 		A25CC8D41EB3323F00504370 /* WeatherClientBasicImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D31EB3323F00504370 /* WeatherClientBasicImpl.swift */; };
 		A25CC8D61EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */; };
@@ -48,6 +49,7 @@
 		25919193BB15EB9C5FD150B2 /* Pods-DISample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DISample/Pods-DISample.debug.xcconfig"; sourceTree = "<group>"; };
 		979F18CC622BB78D5E0A6686 /* Pods_DISampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DISampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReportViewController.swift; sourceTree = "<group>"; };
+		A20216861EB7237E0070EC6F /* WeatherReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherReportViewController.xib; sourceTree = "<group>"; };
 		A25CC8D11EB32BEC00504370 /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		A25CC8D31EB3323F00504370 /* WeatherClientBasicImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClientBasicImpl.swift; sourceTree = "<group>"; };
 		A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReportDaoFileSystemImpl.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */,
 				A28AB0BA1EB26EE7003D30A7 /* RootViewController.swift */,
 				A28AB0CF1EB27DF7003D30A7 /* RootViewController.xib */,
+				A20216861EB7237E0070EC6F /* WeatherReportViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C673E91EB2627000BD8B93 /* LaunchScreen.storyboard in Resources */,
+				A20216871EB7237E0070EC6F /* WeatherReportViewController.xib in Resources */,
 				A28AB0B81EB26BFE003D30A7 /* Configuration.plist in Resources */,
 				A28AB0D01EB27DF7003D30A7 /* RootViewController.xib in Resources */,
 				A2C673E61EB2627000BD8B93 /* Assets.xcassets in Resources */,

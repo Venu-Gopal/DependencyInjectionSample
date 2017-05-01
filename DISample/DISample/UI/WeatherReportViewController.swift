@@ -33,6 +33,7 @@ public class WeatherReportViewController: UIViewController {
         self.weatherReportDao = weatherReportDao
         self.cityInfo = cityInfo
         self.assembly = assembly
+        self.cityName  = cityInfo.loadSelectedCity()
             
         super.init(nibName: nil, bundle: nil)
     }
@@ -48,7 +49,7 @@ public class WeatherReportViewController: UIViewController {
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController!.isNavigationBarHidden = true
+        self.navigationController!.isNavigationBarHidden = false
 
         if (self.cityName != nil)
         {
@@ -56,7 +57,10 @@ public class WeatherReportViewController: UIViewController {
             
             if (self.weatherReport != nil)
             {
-                
+                //self.weatherReportView.weatherReport = self.weatherReport
+            }
+            else if (self.cityName != nil) {
+                self.refreshData()
             }
         }
     }
@@ -70,6 +74,26 @@ public class WeatherReportViewController: UIViewController {
     public override func viewWillDisappear(_ animated: Bool) {
         self.navigationController!.isNavigationBarHidden = false
         super.viewWillDisappear(animated)
+    }
+    
+    private dynamic func refreshData()
+    {
+    //    ICLoader.present()
+        
+        self.weatherClient.loadWeatherReportFor(city: self.cityName, onSuccess: {
+            (weatherReport) in
+            
+        //    self.weatherReportView.weatherReport = weatherReport
+         //   ICLoader.dismiss()
+            
+        }, onError: {
+            (message) in
+            
+         //   ICLoader.dismiss()
+         //   print ("Error" + message)
+            
+            
+        })
     }
 
 }

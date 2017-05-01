@@ -23,8 +23,10 @@ public class ApplicationAssembly:TyphoonAssembly
             
             
             definition!.injectProperty(#selector(ApplicationAssembly.rootViewController), with: self.rootViewController())
+            
         }
     }
+    
     
     public dynamic func rootViewController() -> Any
     {

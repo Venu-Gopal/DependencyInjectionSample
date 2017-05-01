@@ -53,28 +53,44 @@ public class WeatherClientBasicImpl: NSObject, WeatherClient {
             DispatchQueue.global(qos: .default).async
             {
                 let url = self.queryURL(city: city)
-                let data : NSData! = NSData(contentsOf: url as URL)!
                 
-                let dictionary = (try! JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.mutableContainers)) as! NSDictionary
+                let data:NSData
                 
-                if let error = dictionary.parseError()
+                do
                 {
-                    DispatchQueue.main.async
+                    data = try NSData(contentsOf: url as URL, options: NSData.ReadingOptions())
+                    print(data)
+                    
+                    let dictionary = (try! JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.mutableContainers)) as! NSDictionary
+                    
+                    if let error = dictionary.parseError()
                     {
-                        errorBlock(error.rootCause())
-                        return
+                        DispatchQueue.main.async
+                            {
+                                errorBlock(error.rootCause())
+                                return
+                        }
+                    }
+                    else
+                    {
+                        let weatherReport: WeatherReport = dictionary.toWeatherReport()
+                        self.weatherReportDao!.saveReport(weatherReport: weatherReport)
+                        DispatchQueue.main.async
+                            {
+                                successBlock(weatherReport)
+                                return
+                        }
                     }
                 }
-                else
+                catch
                 {
-                    let weatherReport: WeatherReport = dictionary.toWeatherReport()
-                    self.weatherReportDao!.saveReport(weatherReport: weatherReport)
-                    DispatchQueue.main.async
-                    {
-                        successBlock(weatherReport)
-                        return
-                    }
+                    print(error)
                 }
+                
+                
+              //  let data : NSData! = NSData(contentsOf: url as URL)!
+                
+                
             }
         }
         else
