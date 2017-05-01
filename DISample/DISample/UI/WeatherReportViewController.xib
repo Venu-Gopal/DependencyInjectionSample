@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherReportViewController" customModule="DISample" customModuleProvider="target">
             <connections>
+                <outlet property="lblCity" destination="28o-ep-w4n" id="Hd1-57-THE"/>
+                <outlet property="lblTemp" destination="Pe2-gC-e8b" id="a05-t9-s3Z"/>
+                <outlet property="lblWind" destination="YBO-Jp-em5" id="DKq-4n-mjM"/>
+                <outlet property="txtView" destination="fcL-fX-ptP" id="93S-O5-wxb"/>
                 <outlet property="view" destination="iN0-l3-epB" id="mxc-ao-YjD"/>
             </connections>
         </placeholder>
@@ -17,8 +21,50 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="-255" y="231"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28o-ep-w4n" userLabel="City">
+                    <rect key="frame" x="54" y="130" width="260" height="20"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-gC-e8b" userLabel="Wind">
+                    <rect key="frame" x="54" y="158" width="260" height="20"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBO-Jp-em5" userLabel="Temp">
+                    <rect key="frame" x="54" y="186" width="260" height="20"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fcL-fX-ptP">
+                    <rect key="frame" x="54" y="222" width="260" height="131"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.58431372550000005" green="0.67450980390000004" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="28o-ep-w4n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="4g6-k6-8O1"/>
+                <constraint firstAttribute="bottom" secondItem="fcL-fX-ptP" secondAttribute="bottom" constant="314" id="4ls-0u-Mzd"/>
+                <constraint firstAttribute="trailing" secondItem="Pe2-gC-e8b" secondAttribute="trailing" constant="61" id="I29-pw-Tlc"/>
+                <constraint firstAttribute="trailing" secondItem="fcL-fX-ptP" secondAttribute="trailing" constant="61" id="R8I-W6-P60"/>
+                <constraint firstItem="28o-ep-w4n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="130" id="TB5-12-RSs"/>
+                <constraint firstItem="Pe2-gC-e8b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="VO0-3b-qom"/>
+                <constraint firstItem="YBO-Jp-em5" firstAttribute="top" secondItem="Pe2-gC-e8b" secondAttribute="bottom" constant="8" id="b37-6L-FiB"/>
+                <constraint firstItem="YBO-Jp-em5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="hyF-B3-yLk"/>
+                <constraint firstItem="fcL-fX-ptP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="jRC-LP-geV"/>
+                <constraint firstItem="Pe2-gC-e8b" firstAttribute="top" secondItem="28o-ep-w4n" secondAttribute="bottom" constant="8" id="oL4-nX-FGU"/>
+                <constraint firstItem="fcL-fX-ptP" firstAttribute="top" secondItem="YBO-Jp-em5" secondAttribute="bottom" constant="16" id="pde-bl-Mxs"/>
+                <constraint firstAttribute="trailing" secondItem="YBO-Jp-em5" secondAttribute="trailing" constant="61" id="xRv-XI-5YJ"/>
+                <constraint firstAttribute="trailing" secondItem="28o-ep-w4n" secondAttribute="trailing" constant="61" id="zAb-f9-kuK"/>
+            </constraints>
+            <point key="canvasLocation" x="-465" y="107"/>
         </view>
     </objects>
 </document>

@@ -8,8 +8,8 @@
 import UIKit
 
 
-public class WeatherReportViewController: UIViewController {
-    
+public class WeatherReportViewController: UIViewController
+{
     public private(set) var weatherClient : WeatherClient
     public private(set) var weatherReportDao : WeatherReportDao
     public private(set) var cityInfo : CityInfo
@@ -17,6 +17,11 @@ public class WeatherReportViewController: UIViewController {
     
     private var cityName : String?
     private var weatherReport : WeatherReport?
+    
+    @IBOutlet var lblCity: UILabel!
+    @IBOutlet var lblWind: UILabel!
+    @IBOutlet var lblTemp: UILabel!
+    @IBOutlet var txtView: UITextView!
     
     
     //-------------------------------------------------------------------------------------------
@@ -57,7 +62,11 @@ public class WeatherReportViewController: UIViewController {
             
             if (self.weatherReport != nil)
             {
-                //self.weatherReportView.weatherReport = self.weatherReport
+                lblCity.text = weatherReport?.city
+                lblWind.text = weatherReport?.currentConditions.wind
+                lblTemp.text = weatherReport?.currentConditions.temperature?.inCelcius().stringValue
+                
+                txtView.text = weatherReport?.currentConditions.longSummary()
             }
             else if (self.cityName != nil) {
                 self.refreshData()
