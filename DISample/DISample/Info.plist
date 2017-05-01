@@ -35,5 +35,9 @@
 		<string>CoreAssembly</string>
 		<string>ApplicationAssembly</string>
 	</array>
+	<key>TyphoonGlobalConfigFilenames</key>
+	<array>
+		<string>Configuration.plist</string>
+	</array>
 </dict>
 </plist>

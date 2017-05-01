@@ -21,7 +21,7 @@ public class ApplicationAssembly:TyphoonAssembly
         return TyphoonDefinition.withClass(AppDelegate.self) {
             (definition) in
             
-            //definition.injectProperty("cityDao", with: self.coreComponents.cityDao())
+            
             definition!.injectProperty(#selector(ApplicationAssembly.rootViewController), with: self.rootViewController())
         }
     }
@@ -31,13 +31,14 @@ public class ApplicationAssembly:TyphoonAssembly
         return TyphoonDefinition.withClass(RootViewController.self) {
             (definition) in
             
-            definition?.useInitializer(Selector(("initWithAssembly:arrCityData:")))
+            definition?.useInitializer(Selector(("initWithAssembly:arrCityData:weatherReportVC:")))
                         {
                             // Injecting with initilizer:
                             
                             (initializer) in
                             initializer?.injectParameter(with:self) // initWithwithAssembly:
                             initializer?.injectParameter(with:self.cityListArr()) // arrCityData:
+                            initializer?.injectParameter(with: self.weatherReportController())
                         }
             
             // Injecting with property:
@@ -56,10 +57,26 @@ public class ApplicationAssembly:TyphoonAssembly
         return ["Noida", "Delhi", "Punjab"]
     }
     
+    public dynamic func weatherReportController() -> Any
+    {
+        return TyphoonDefinition.withClass(WeatherReportViewController.self) {
+            (definition) in
+            definition!.useInitializer(Selector(("initWithWeatherClient:weatherReportDao:cityInfo:assembly:")))
+            {
+                (initializer) in
+    
+                initializer?.injectParameter(with: self.coreAssembly.weatherClient())
+                initializer?.injectParameter(with: self.coreAssembly.weatherReportDao())
+                initializer?.injectParameter(with: self.coreAssembly.cityInfo())
+                initializer?.injectParameter(with: self)
+            }
+        };
+    }
     
     /*
      * A config definition, referencing properties that will be loaded from a plist.
      */
+    
     public dynamic func config() -> Any
     {
         return TyphoonDefinition.withConfigName("Configuration.plist")

@@ -1,10 +1,9 @@
-//
+
 //  RootViewController.swift
 //  DISample
 //
 //  Created by DMI on 27/04/17.
 //  Copyright © 2017 DMI. All rights reserved.
-//
 
 import UIKit
 
@@ -30,6 +29,8 @@ public class RootViewController : UIViewController,
         }
     }
 
+    var weatherReportVC: WeatherReportViewController!
+    
     
     //Interface Builder injected properties-----------------------------
     @IBOutlet var citiesListTableView : UITableView!
@@ -37,7 +38,8 @@ public class RootViewController : UIViewController,
     //-----------------------------------------------------------------------------------
     
     public init(withAssembly : ApplicationAssembly,
-                arrCityData:NSArray)
+                arrCityData:NSArray,
+        weatherReportVC:WeatherReportViewController)
     {
         super.init(nibName : nil, bundle : nil)
         self.assembly = withAssembly
@@ -85,10 +87,8 @@ public class RootViewController : UIViewController,
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        //let cityName : String = cityListFromApi!.object(at: indexPath.row) as! String
-        
-        //NSLog(cityName)
-       // cityDao.saveCurrentlySelectedCity(cityName)
+        let cityName : String = cityListFromApi!.object(at: indexPath.row) as! String
+        cityInfo.saveCurrentlySelectedCity(cityName: cityName)
     }
     
 }

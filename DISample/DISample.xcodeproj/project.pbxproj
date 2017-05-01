@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D1EEE4C5465F2477BB7D458 /* Pods_DISample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB805424041F069940451FFC /* Pods_DISample.framework */; };
 		932C5846120C98B6BFB1BE4C /* Pods_DISampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979F18CC622BB78D5E0A6686 /* Pods_DISampleTests.framework */; };
+		A20216851EB7021F0070EC6F /* WeatherReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */; };
 		A25CC8D21EB32BEC00504370 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D11EB32BEC00504370 /* CoreAssembly.swift */; };
 		A25CC8D41EB3323F00504370 /* WeatherClientBasicImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D31EB3323F00504370 /* WeatherClientBasicImpl.swift */; };
 		A25CC8D61EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */; };
@@ -16,8 +17,6 @@
 		A25CC8DA1EB33E3600504370 /* NSError+PocketForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D91EB33E3600504370 /* NSError+PocketForecast.swift */; };
 		A25CC8E51EB3623D00504370 /* CityDaoUserDefaultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8E41EB3623D00504370 /* CityDaoUserDefaultsImpl.swift */; };
 		A25CC8E71EB362BF00504370 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8E61EB362BF00504370 /* CityInfo.swift */; };
-		A25CC8EB1EB364ED00504370 /* ThemeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8EA1EB364ED00504370 /* ThemeFactory.swift */; };
-		A25CC8ED1EB3651F00504370 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8EC1EB3651F00504370 /* Theme.swift */; };
 		A28AB0B41EB268C6003D30A7 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AB0B31EB268C6003D30A7 /* ApplicationAssembly.swift */; };
 		A28AB0B81EB26BFE003D30A7 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = A28AB0B71EB26BFE003D30A7 /* Configuration.plist */; };
 		A28AB0BB1EB26EE7003D30A7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AB0BA1EB26EE7003D30A7 /* RootViewController.swift */; };
@@ -48,6 +47,7 @@
 		0019DFC1EBC2C905742FF38D /* Pods-DISampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DISampleTests/Pods-DISampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25919193BB15EB9C5FD150B2 /* Pods-DISample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DISample/Pods-DISample.debug.xcconfig"; sourceTree = "<group>"; };
 		979F18CC622BB78D5E0A6686 /* Pods_DISampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DISampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReportViewController.swift; sourceTree = "<group>"; };
 		A25CC8D11EB32BEC00504370 /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		A25CC8D31EB3323F00504370 /* WeatherClientBasicImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClientBasicImpl.swift; sourceTree = "<group>"; };
 		A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReportDaoFileSystemImpl.swift; sourceTree = "<group>"; };
@@ -55,8 +55,6 @@
 		A25CC8D91EB33E3600504370 /* NSError+PocketForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+PocketForecast.swift"; sourceTree = "<group>"; };
 		A25CC8E41EB3623D00504370 /* CityDaoUserDefaultsImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDaoUserDefaultsImpl.swift; sourceTree = "<group>"; };
 		A25CC8E61EB362BF00504370 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
-		A25CC8EA1EB364ED00504370 /* ThemeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFactory.swift; sourceTree = "<group>"; };
-		A25CC8EC1EB3651F00504370 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A28AB0AF1EB266CA003D30A7 /* DISample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DISample-Bridging-Header.h"; sourceTree = "<group>"; };
 		A28AB0B31EB268C6003D30A7 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		A28AB0B71EB26BFE003D30A7 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
@@ -125,6 +123,7 @@
 		A28AB0B91EB26E6F003D30A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */,
 				A28AB0BA1EB26EE7003D30A7 /* RootViewController.swift */,
 				A28AB0CF1EB27DF7003D30A7 /* RootViewController.xib */,
 			);
@@ -156,8 +155,6 @@
 		A28AB0CC1EB2775A003D30A7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				A25CC8EC1EB3651F00504370 /* Theme.swift */,
-				A25CC8EA1EB364ED00504370 /* ThemeFactory.swift */,
 				A25CC8E61EB362BF00504370 /* CityInfo.swift */,
 				A25CC8E41EB3623D00504370 /* CityDaoUserDefaultsImpl.swift */,
 				A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */,
@@ -435,11 +432,10 @@
 				A28AB0C51EB27394003D30A7 /* ForecastConditions.swift in Sources */,
 				A28AB0BB1EB26EE7003D30A7 /* RootViewController.swift in Sources */,
 				A25CC8E51EB3623D00504370 /* CityDaoUserDefaultsImpl.swift in Sources */,
+				A20216851EB7021F0070EC6F /* WeatherReportViewController.swift in Sources */,
 				A28AB0CE1EB27768003D30A7 /* WeatherReportDao.swift in Sources */,
 				A25CC8D41EB3323F00504370 /* WeatherClientBasicImpl.swift in Sources */,
-				A25CC8ED1EB3651F00504370 /* Theme.swift in Sources */,
 				A2C673DF1EB2627000BD8B93 /* AppDelegate.swift in Sources */,
-				A25CC8EB1EB364ED00504370 /* ThemeFactory.swift in Sources */,
 				A25CC8D21EB32BEC00504370 /* CoreAssembly.swift in Sources */,
 				A25CC8D61EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift in Sources */,
 				A28AB0C31EB27352003D30A7 /* CurrentConditions.swift in Sources */,
