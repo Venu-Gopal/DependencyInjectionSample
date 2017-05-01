@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/UI/WeatherReportViewController.swift"
-            timestampString = "515319945.861255"
+            timestampString = "515328923.226592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "refreshData()"
             landmarkType = "7">
             <Locations>
@@ -409,11 +409,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/Client/WeatherClientBasicImpl.swift"
-            timestampString = "515318063.927959"
+            timestampString = "515328923.226592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "loadWeatherReportFor(city:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -425,11 +425,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/Client/WeatherClientBasicImpl.swift"
-            timestampString = "515318064.86148"
+            timestampString = "515328923.226592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "loadWeatherReportFor(city:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
