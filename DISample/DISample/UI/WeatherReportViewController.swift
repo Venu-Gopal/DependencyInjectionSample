@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 public class WeatherReportViewController: UIViewController
 {
     public private(set) var weatherClient : WeatherClient
@@ -22,7 +21,6 @@ public class WeatherReportViewController: UIViewController
     @IBOutlet var lblWind: UILabel!
     @IBOutlet var lblTemp: UILabel!
     @IBOutlet var txtView: UITextView!
-    
     
     //-------------------------------------------------------------------------------------------
     // MARK: - Initialization & Destruction
@@ -94,6 +92,13 @@ public class WeatherReportViewController: UIViewController
         {
             (message) in
         })
+    }
+    
+    @IBAction func myAdd(sender: Any)
+    {
+        let name: String = sender as! String
+        
+        self.cityInfo.saveCity(name: name)
     }
 
 }

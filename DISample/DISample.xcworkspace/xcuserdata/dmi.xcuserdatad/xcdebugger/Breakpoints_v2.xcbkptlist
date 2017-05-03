@@ -106,7 +106,7 @@
                   moduleName = "DISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/Assemblies/ApplicationAssembly.swift"
-                  timestampString = "515319219.328413"
+                  timestampString = "515490192.439469"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -121,7 +121,7 @@
                   moduleName = "DISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/Assemblies/ApplicationAssembly.swift"
-                  timestampString = "515319219.330713"
+                  timestampString = "515490192.441919"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/UI/WeatherReportViewController.swift"
-            timestampString = "515319945.861255"
+            timestampString = "515490180.903036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "init(weatherClient:weatherReportDao:cityInfo:assembly:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/UI/WeatherReportViewController.swift"
-            timestampString = "515319945.861255"
+            timestampString = "515490180.903036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "refreshData()"
             landmarkType = "7">
             <Locations>
@@ -314,11 +314,11 @@
                   moduleName = "DISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/WeatherReportViewController.swift"
-                  timestampString = "515319219.373453"
+                  timestampString = "515490192.486035"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
                   offsetFromSymbolStart = "22">
                </Location>
                <Location
@@ -329,11 +329,11 @@
                   moduleName = "DISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/WeatherReportViewController.swift"
-                  timestampString = "515319219.375432"
+                  timestampString = "515490192.488088"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -346,60 +346,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/UI/WeatherReportViewController.swift"
-            timestampString = "515328923.226592"
+            timestampString = "515490180.903036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "refreshData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DISample.WeatherReportViewController.(refreshData in _CA67D1C937B493837CCC3A1BCD39FEB8) () -&gt; ()"
-                  moduleName = "DISample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/WeatherReportViewController.swift"
-                  timestampString = "515319219.379489"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "532">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DISample.WeatherReportViewController.((refreshData in _CA67D1C937B493837CCC3A1BCD39FEB8) () -&gt; ()).(closure #1)"
-                  moduleName = "DISample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/WeatherReportViewController.swift"
-                  timestampString = "515319219.381477"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DISample.WeatherReportViewController.((refreshData in _CA67D1C937B493837CCC3A1BCD39FEB8) () -&gt; ()).(closure #2)"
-                  moduleName = "DISample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dmi/DependencyInjectionSample/DISample/DISample/UI/WeatherReportViewController.swift"
-                  timestampString = "515319219.38351"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -441,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/UI/WeatherReportViewController.swift"
-            timestampString = "515319945.861255"
+            timestampString = "515490180.903036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -457,12 +410,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DISample/UI/WeatherReportViewController.swift"
-            timestampString = "515319945.861255"
+            timestampString = "515490180.903036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DISample/Other/CityDaoUserDefaultsImpl.swift"
+            timestampString = "515488383.130116"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "saveCity(name:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

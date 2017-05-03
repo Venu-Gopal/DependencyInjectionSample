@@ -11,6 +11,7 @@
 		932C5846120C98B6BFB1BE4C /* Pods_DISampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979F18CC622BB78D5E0A6686 /* Pods_DISampleTests.framework */; };
 		A20216851EB7021F0070EC6F /* WeatherReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */; };
 		A20216871EB7237E0070EC6F /* WeatherReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20216861EB7237E0070EC6F /* WeatherReportViewController.xib */; };
+		A23002831EB9BD500068F2C7 /* WeatherClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23002821EB9BD500068F2C7 /* WeatherClientTest.swift */; };
 		A25CC8D21EB32BEC00504370 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D11EB32BEC00504370 /* CoreAssembly.swift */; };
 		A25CC8D41EB3323F00504370 /* WeatherClientBasicImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D31EB3323F00504370 /* WeatherClientBasicImpl.swift */; };
 		A25CC8D61EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */; };
@@ -50,6 +51,7 @@
 		979F18CC622BB78D5E0A6686 /* Pods_DISampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DISampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20216841EB7021F0070EC6F /* WeatherReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReportViewController.swift; sourceTree = "<group>"; };
 		A20216861EB7237E0070EC6F /* WeatherReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherReportViewController.xib; sourceTree = "<group>"; };
+		A23002821EB9BD500068F2C7 /* WeatherClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClientTest.swift; sourceTree = "<group>"; };
 		A25CC8D11EB32BEC00504370 /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		A25CC8D31EB3323F00504370 /* WeatherClientBasicImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClientBasicImpl.swift; sourceTree = "<group>"; };
 		A25CC8D51EB333FE00504370 /* WeatherReportDaoFileSystemImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReportDaoFileSystemImpl.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				A2C673F31EB2627000BD8B93 /* DISampleTests.swift */,
 				A2C673F51EB2627000BD8B93 /* Info.plist */,
+				A23002821EB9BD500068F2C7 /* WeatherClientTest.swift */,
 			);
 			path = DISampleTests;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C673F41EB2627000BD8B93 /* DISampleTests.swift in Sources */,
+				A23002831EB9BD500068F2C7 /* WeatherClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -561,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

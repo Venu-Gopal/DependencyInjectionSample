@@ -42,6 +42,7 @@ public class CoreAssembly: TyphoonAssembly
         }
     }
     
+    
     public dynamic func cityListFromApi() -> Any
     {
          return ["Noida", "Delhi", "Punjab"]
